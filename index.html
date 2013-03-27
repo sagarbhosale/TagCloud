@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>TagCloud by sagarbhosale</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/sagarbhosale/TagCloud">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/sagarbhosale/TagCloud/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/sagarbhosale/TagCloud/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>TagCloud</h1>
+          <p>Server-side dynamic tag cloud</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/sagarbhosale">sagarbhosale</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h3>What's different in this TagCloud?</h3>
+
+<p>In short - Works across browsers and across devices! :)</p>
+
+<p><strong>Here's the not-so-short answer, for those who care. :P</strong><br>
+There are hundreds, if not thousands, of tag cloud creating client side scripts using JavaScript and/or HTML5. While they look fairly good and do a decent job, the problem with them is they work ONLY IN SOME browsers. Because every browsers runs JavaScript differently. Though there are JavaScript libraries which can detect the browser in order to use the appropriate API, the overhead of checking the browser still exists. Plus, you never know which browser will beat the rest tomorrow.</p>
+
+<p>So, instead of depending on the browser we can ask the server to provide us with a tag cloud. No matter what rendering techniques your browser uses, it will not mess much with the way an image is handled. This is the reason TagCloud JUST WORKS ( it HAS to ) across browsers and across devices.</p>
+
+<h2>Requirements</h2>
+
+<p>TagCloud needs PHP with the GD Library.<br>
+The code has been tested on PHP 5.2.12 with php_gd2.dll (extension for Windows) served by Apache 2.2</p>
+
+<h2>Usage</h2>
+
+<h3>Setup</h3>
+
+<ol>
+<li>Download the code</li>
+<li>Copy the contents of the TagCloud/images directory into the directory where you keep your public images.</li>
+<li>Copy TagCloud/include/TagCloudProvider.php at any location favorable and accessible to your PHP script in which you want to use TagCloud.</li>
+</ol><h3>Including the classes</h3>
+
+<p>Include the provider class as follows.</p>
+
+<div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span>
+    <span class="k">require</span> <span class="s2">"include/TagCloudProvider.php"</span><span class="p">;</span>
+    <span class="nv">$tg</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">TagCloudProvider</span><span class="p">(</span><span class="s2">"images/tagCloud.php"</span><span class="p">);</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+<p>Here, "images/tagCloud.php" is the path of the tagCloud.php file we copied earlier. You will need to set it as per your directory structure.</p>
+
+<h3>Getting the image</h3>
+
+<div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span> 
+
+<span class="nv">$tg</span><span class="o">-&gt;</span><span class="na">create</span><span class="p">(</span>
+    <span class="mi">300</span><span class="p">,</span>
+    <span class="mi">200</span><span class="p">,</span>
+    <span class="k">Array</span><span class="p">(</span>
+        <span class="s1">'C'</span><span class="p">,</span>
+        <span class="s1">'C++'</span><span class="p">,</span>
+        <span class="s1">'Java'</span><span class="p">,</span>
+        <span class="s1">'x86 Assembly'</span><span class="p">,</span>
+        <span class="s1">'PHP'</span><span class="p">,</span>
+        <span class="s1">'MySQL'</span><span class="p">,</span>
+        <span class="s1">'XML'</span><span class="p">,</span>
+        <span class="s1">'Linux'</span>
+        <span class="p">)</span>
+<span class="p">);</span>
+
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+
+<p>Here:<br>
+Image width is 300px<br>
+Image height is 200px<br>
+Array contains the words to be added to the cloud</p>
+
+<h3>Support or Contact</h3>
+
+<p>TagCloud is authored and maintained by <a href="https://github.com/sagarbhosale" class="user-mention">@sagarbhosale</a>.
+Email: <a href="mailto:sagar@codenext.co.in">sagar@codenext.co.in</a></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-39633337-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
