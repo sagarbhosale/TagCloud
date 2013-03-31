@@ -12,6 +12,6 @@ Here's the not-so-short answer, for those who care. :P
 
 TagCloud is authored and maintained by @sagarbhosale
 
-Personal Homepage:  sagarbhosale.com
+Personal Homepage:  www.sagarbhosale.com
 
 Email: sagar@codenext.co.in
