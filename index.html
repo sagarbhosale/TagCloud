@@ -52,7 +52,32 @@ There are hundreds, if not thousands, of tag cloud creating client side scripts 
 <p>TagCloud needs PHP with the GD Library.<br>
 The code has been tested on PHP 5.2.12 with php_gd2.dll (extension for Windows) served by Apache 2.2</p>
 
-<h2>Usage</h2>
+<h2>Installing the GD library</h2>
+
+<p>You will need to install the GD Library if it is unavailable on your system.</p>
+
+<h3>For Linux (Ubuntu with PHP5)</h3>
+
+<p>Run the command</p>
+
+<div class="highlight"><pre>apt-get install php5-gd
+</pre></div>
+
+<p>This should place the gd.so file inside your PHP extensions directory. If PHP is still unable to find the library, then check whether the following line exists (and is uncommented) in your php.ini file.</p>
+
+<pre><code>extension=gd.so
+</code></pre>
+
+<h3>For Windows</h3>
+
+<ol>
+<li>Check if php_gd2.dll exists in your PHP extension folder. If not, download it and add it to the PHP extensions folder.</li>
+<li>Add/Uncomment the line in your php.ini file.
+<code>
+extension=php_gd2.dll
+</code>
+For those have hosted their code on a shared server, you will have to consult with the hosting provider. They will help you get the library.</li>
+</ol><h2>Usage</h2>
 
 <h3>Setup</h3>
 
