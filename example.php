@@ -1,6 +1,6 @@
 <?php
 	require "include/TagCloudProvider.php";
-	$tg = new TagCloudProvider("images/tagCloud.php");
+	$tg = new TagCloudProvider("images/TagCloud.php");
 ?>
 <html>
 	<head>
