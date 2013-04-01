@@ -10,6 +10,9 @@ Here's the not-so-short answer, for those who care. :P
 
   So, instead of depending on the browser we can ask the server to provide us with a tag cloud. No matter what rendering techniques your browser uses, it will not mess much with the way an image is handled. This is the reason TagCloud JUST WORKS ( it HAS to ) across browsers and across devices.
 
+TagCloud Demo Page:
+http://www.sagarbhosale.com/demo/TagCloud-master/example.php
+
 TagCloud is authored and maintained by @sagarbhosale
 
 Personal Homepage:  www.sagarbhosale.com
