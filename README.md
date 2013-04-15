@@ -13,7 +13,7 @@ Here's the not-so-short answer, for those who care. :P
 TagCloud Demo Page:
 http://www.sagarbhosale.com/demo/TagCloud-master/example.php
 
-TagCloud is authored and maintained by @sagarbhosale
+TagCloud is authored and maintained by sagarbhosale : https://github.com/sagarbhosale
 
 Personal Homepage:  www.sagarbhosale.com
 
